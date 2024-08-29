@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="HDR-Plenoxels: Self-Calibrating High Dynamic Range Radiance Fields">
+        content="Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices">
   <meta name="keywords" content="Mesh reconstruction of Humans and Animals">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HDR-Plenoxels: Self-Calibrating High Dynamic Range Radiance Fields</title>
+  <title>Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices</title>
 
   <!-- fontawesome for icons -->
   <script src="https://kit.fontawesome.com/b6f2d55583.js" crossorigin="anonymous"></script>
@@ -96,21 +96,23 @@
             <span class="author-block">
               <a href="https://kim-junseong.github.io/">Kim Jun-Seong</a><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://ug-kim.github.io">Kim Yu-Ji</a><sup>*</sup>,</span>
+              <a href="https://ug-kim.github.io">Mingyu Kim</a><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://sites.google.com/g.postech.edu/moon-ye-bin/%ED%99%88">Moon Ye-Bin</a>,
+              <a href="https://sites.google.com/g.postech.edu/moon-ye-bin/%ED%99%88">GeonU Kim</a>,
             </span>
             <span class="author-block">
-              <a href="https://ami.postech.ac.kr/members/tae-hyun-oh">Tae-Hyun Oh</a>
+              <a href="https://ami.postech.ac.kr/members/tae-hyun-oh">Tae-Hyun Oh</a><sup>✝</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://wityworks.com/">Jin-Hwa Kim</a><sup>✝</sup>,</span>
             </span>
           </div>
-
           <div class="is-size-5 publication-authors">
             <span class="author-block">POSTECH</span>
             <!-- <span class="author-block"><sup>2</sup>UNIST</span> -->
           </div>
           <div class="column has-text-centered">
-            <span class="author-block">European Conference on Computer Vision (ECCV) 2022</span>
+            <span class="author-block">IEEE Robotics and Automation Letters (RA-L) 2024</span>
           </div>
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -125,7 +127,7 @@
                 </a>
               </span> -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2208.06787"
+                <a href="https://facthash.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -136,7 +138,7 @@
 
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/postech-ami/HDR-Plenoxels"
+                <a href="https://facthash.github.io/"
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fa-brands fa-github"></i>
@@ -145,20 +147,9 @@
                 </a>
               </span>
 
-              <!-- Data Link. -->
-              <span class="link-block">
-                <a href="https://postechackr-my.sharepoint.com/:f:/g/personal/gucka28_postech_ac_kr/EiM6SNSIJhRPl908z3zGTRoBKTBLMVA-flpTwnXDs70KgQ?e=4K2Tq9"
-                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fa-solid fa-download"></i>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-
               <!-- POSTER Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1ufuaBS0TYx_pMyb2oeU8YiZKJYr-DklQ/view?usp=sharing"
+                <a href="https://facthash.github.io/"
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fa-solid fa-image"></i>
@@ -168,15 +159,15 @@
               </span>
 
               <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_0926.html"
+              <span class="link-block">
+                <a href="https://facthash.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span>
 <!--              &lt;!&ndash; Code Link. &ndash;&gt;-->
 <!--              <span class="link-block">-->
 <!--                <a href="https://github.com/google/nerfies"-->
@@ -229,13 +220,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="images/qual_in_ours.png">
+      <img src="images/bitfield.pdf">
       <h2 class="subtitle has-text-centered">
-        The static and varying mean camera conditions include exposure, white balance, and CRF. 
-        The static camera condition is a controlled environmental setting, i.e., all views of the scene 
-        have the same components of exposure, white balance, and CRF. The varying camera 
-        condition is alternated environmental settings, i.e., all views of the scene 
-        have different components.
+        To be updated
       </h2>
     </div>
   </div>
@@ -307,24 +294,36 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose high dynamic range (HDR) radiance fields, HDR-Plenoxels, 
-            that learn a plenoptic function of 3D HDR radiance fields, geometry information, 
-            and varying camera settings inherent in 2D low dynamic range (LDR) images.
+            We introduce Fact-Hash, a novel parameter encoding
+            method for training on-device neural radiance fields.
+            Neural Radiance Fields (NeRF) have proven pivotal in 3D representations,
+            but their applications are limited due to large computational
+            resources.
           </p>
           <p>
-            Our voxel-based volume rendering pipeline reconstructs HDR radiance fields 
-            with only multi-view LDR images taken from varying camera settings 
-            in an end-to-end manner and has a fast convergence speed. 
-            To deal with various cameras in real-world scenarios, 
-            we introduce a tone mapping module that models the digital 
-            in-camera imaging pipeline (ISP) and disentangles radiometric settings. 
-            Our tone mapping module allows us to render by controlling the radiometric settings 
-            of each novel view.
+            On-device training can open large application
+            fields, providing strength in communication limitations, privacy
+            concerns, and fast adaptation to a frequently changing scene.
+            However, challenges such as limited resources (GPU memory,
+            storage, and power) impede their deployment. To handle this, we
+            introduce Fact-Hash, a novel parameter-encoding merging Tensor
+            Factorization and Hash-encoding techniques. This integration
+            offers two benefits: the use of rich high-resolution features and
+            the few-shot robustness. 
           <p>
-            Finally, we build a multi-view dataset with varying camera conditions, 
-            which fits our problem setting. Our experiments show that HDR-Plenoxels 
-            can express detail and high-quality HDR novel views from only LDR images 
-            with various cameras.
+            In Fact-Hash, we project 3D coordinates
+            into multiple lower-dimensional forms (2D or 1D) before applying
+            the hash function and then aggregate them into a single feature.
+            Comparative evaluations against state-of-the-art methods demonstrate
+            Fact-Hash’s superior memory efficiency, preserving quality
+            and rendering speed. Fact-Hash saves memory usage by over onethird
+            while maintaining the PSNR values compared to previous
+            encoding methods. The on-device experiment validates the superiority
+            of Fact-Hash compared to alternative positional encoding
+            methods in computational efficiency and energy consumption.
+            These findings highlight Fact-Hash as a promising solution to
+            improve feature grid representation, address memory constraints,
+            and improve quality in various applications.
           </p>
         </div>
       </div>

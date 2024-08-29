@@ -1,15 +1,10 @@
-# HDR-Plenoxels
+# FactHash
 
-This is the repository that contains source code for the ECCV'22 paper, [HDR-Plenoxels](https://hdr-plenoxels.github.io/).
+This is the repository that contains source code for the RA-L paper, [FactHash](https://facthash.github.io/).
 
-If you find HDR-Plenoxels useful for your work please cite:
+If you find FactHash useful for your work please cite:
 ```
-@inproceedings{jun2022hdr,
-  title     = {HDR-Plenoxels: Self-Calibrating High Dynamic Range Radiance Fields},
-  author    = {Jun-Seong, Kim and Yu-Ji, Kim and Ye-Bin, Moon and Oh, Tae-Hyun},
-  booktitle = {ECCV},
-  year      = {2022},
-}
+To Be Updated!
 ```
 
 # Website License
