@@ -185,25 +185,6 @@
                 <h3>
                     Abstract
                 </h3>
-                <!-- Image container starts here -->
-                <div class="row">
-                    <!-- First image with label 'hexplane' -->
-                    <div class="col-md-5">
-                        <img src="img/0_HexPlane.png" class="img-responsive" alt="Hexplane Representation">
-                        <p class="text-center"><strong><a href="https://caoang327.github.io/HexPlane/" target="_blank">HexPlane</a></strong></p>
-                    </div>
-                    <!-- Arrow symbol -->
-                    <div class="col-md-2 text-center">
-                        <h1 style="font-size: 20px; line-height: 120px; vertical-align: middle;">→</h1>
-                    </div>
-                    <!-- Second image with label 'ours' -->
-                    <div class="col-md-5">
-                        <img src="img/0_Ours.png" class="img-responsive" alt="Our Method">
-                        <p class="text-center"><strong>Ours</strong></p>
-                    </div>
-                </div>
-                <!-- Image container ends -->
-
                 <p class="text-justify">
                     We introduce Fact-Hash, a novel parameter encoding method for training on-device neural radiance fields. Neural Radiance Fields (NeRF) have proven pivotal in 3D representations, but their applications are limited due to large computational resources.
                     On-device training can open large application fields, providing strength in communication limitations, privacy concerns, and fast adaptation to a frequently changing scene. However, challenges such as limited resources (GPU memory, storage, and power) impede their deployment. To handle this, we introduce Fact-Hash, a novel parameter-encoding merging Tensor Factorization and Hash-encoding techniques. This integration offers two benefits: the use of rich high-resolution features and the few-shot robustness.
@@ -298,10 +279,15 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Experimental Results: Static NeRF
+                    Experimental Results
                 </h3>
                 <div class="text-justify">
+                    <div class="text-center">
+                        <img src="./img/3_Scheme.png" width="100%">
+                    </div>
+                    <br>                    
                     TBD
+                    <br>
                 </div>
                 <br>
                 <h4>
@@ -391,9 +377,9 @@
                             </video>
                         </td>
                     </tr>
-                </table>
+                </table> -->
             </div>
-        </div> -->
+        </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -402,13 +388,13 @@
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1 scrollbox">
                     <textarea id="bibtex" class="form-control" readonly>
-@InProceedings{kim2024factorized,
-    author    = {Kim, Jun Seong and Kim, Mingyu and Kim, GeonU and Oh, Tae Hyun and Kim, Jin Hwa},  
-    title     = {Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices},  
-    booktitle = {IEEE Robotics and Automation Letters},
-    year      = {2024},
-    publisher = {IEEE},  
-    }
+                        @InProceedings{kim2024factorized,
+                            author    = {Kim, Jun Seong and Kim, Mingyu and Kim, GeonU and Oh, Tae Hyun and Kim, Jin Hwa},  
+                            title     = {Factorized Multi-Resolution HashGrid for Efficient Neural Radiance Fields: Execution on Edge-Devices},  
+                            booktitle = {IEEE Robotics and Automation Letters},
+                            year      = {2024},
+                            publisher = {IEEE},  
+                            }
                     </textarea>
                 </div>
             </div>
